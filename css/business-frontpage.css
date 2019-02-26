@@ -1,0 +1,69 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+
+.wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#slide {
+  -webkit-animation: slide 2s forwards;
+  animation: slide 2s forwards;
+}
+
+  
+@keyframes slide {
+  100% { transform: translateX(0%);}
+}
+
+@-webkit-keyframes slide {
+  100% { -webkit-transform: translateX(0%); }
+} 
+
+
+.text-animation {
+  position: relative;
+}
+
+@keyframes topFadeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.product-description {
+  top: 25%;
+  opacity: 1;
+  animation-name: topFadeOut;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+}
+
+.product-container {
+  padding-bottom:180px;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 200px;
+}
+
+
+
+
