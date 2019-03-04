@@ -1,3 +1,5 @@
+
+
 var languages = Array.from(document.getElementsByClassName('language'));
 var xhttp = new XMLHttpRequest();
 var langDocument = {};
@@ -25,3 +27,4 @@ function processLangDocument(){
         if(langDocument[key]) value.innerText = langDocument[key];
     });
 }
+
