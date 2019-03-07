@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Business Frontpage - Start Bootstrap Template</title>
+  <title>Aqualine</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
           <h1 class="display-4 text-white mt-5 mb-2">AQUALINE</h1>
-          <p class="lead mb-5 text-white-50">SISTEM PURIFICARE APA</p>
+          <p class="lead mb-5 text-white-50" data-langkey="water">SISTEM PURIFICARE APA</p>
         </div>
       </div>
     </div>
@@ -45,48 +45,48 @@
 
     <div class="row">
       <div class="col-md-8 mb-5">
-        <h2>What We Do</h2>
+        <h2 data-langkey="what_we_do">Ce facem</h2>
         <hr>
-        <p><b>Aqua Line</b> este un sistem automat, coordonat de un microcontroller ce realizeaza producerea apei deionizate necesara analizoarelor automate de biochimie, precum si necesitatilor curente ale laboratoarelor. Functioneaza pe principiul osmozei inverse si asigura furnizarea  apei deionizate de tip II in conformitate cu standardele ASTM, NCCLS, CAP, ISO3696, BS3997, CLSI. Purificarea apei se realizeaza in 7 etape, dupa cum urmeaza: </p>
+        <p data-langkey="aqualine_description">Aqua Line este un sistem automat, coordonat de un microcontroller ce realizeaza producerea apei deionizate necesara analizoarelor automate de biochimie, precum si necesitatilor curente ale laboratoarelor. Functioneaza pe principiul osmozei inverse si asigura furnizarea  apei deionizate de tip II in conformitate cu standardele ASTM, NCCLS, CAP, ISO3696, BS3997, CLSI. Purificarea apei se realizeaza in 7 etape, dupa cum urmeaza: </p>
  
         <ol>
-          <li> Prefiltrare sediment 1-retine toate particulele  din apa ce au o granulatie mai mare de 5 microni. </li>
+          <li data-langkey="prefiltration"> Prefiltrare sediment 1-retine toate particulele  din apa ce au o granulatie mai mare de 5 microni. </li>
            
-          <li>Filtrare cu carbune activat-retine clorul si  substantele organice din apa. </li>
+          <li data-langkey="filtration">Filtrare cu carbune activat-retine clorul si substantele organice din apa. </li>
            
-          <li>Prefiltrare sediment 2-retine toate particulele din apa ce au o granulatie mai mare de 1 micron.</li> 
+          <li data-langkey="sedimentation">Prefiltrare sediment 2-retine toate particulele din apa ce au o granulatie mai mare de 1 micron.</li> 
            
-          <li>Membrana osmoza inversa-elimina pana la 99% din substantele dizolvate in apa. O pompa de inalta presiune ( 10 bari ) asigura functionarea in parametri optimi a membranei </li>
+          <li data-langkey="osmosis">Membrana osmoza inversa-elimina pana la 99% din substantele dizolvate in apa. O pompa de inalta presiune ( 10 bari ) asigura functionarea in parametri optimi a membranei </li>
            
-          <li>Filtrare post-osmoza-elimina eventualele impuritati din membrana, precum si eventualul miros neplacut al apei </li>
+          <li data-langkey="post_osmosis">Filtrare post-osmoza-elimina eventualele impuritati din membrana, precum si eventualul miros neplacut al apei </li>
            
-          <li>Rasini schimbatoare de ioni-elimina anionii si cationii pentru care membrana de osmoza a fost  permeabila, rejectand total continutul ionic al apei. </li>
+          <li data-langkey="ionised">Rasini schimbatoare de ioni-elimina anionii si cationii pentru care membrana de osmoza a fost  permeabila, rejectand total continutul ionic al apei. </li>
            
-          <li>Lampa UV- purifica microbiologic apa produsa cu ajutorul razelor ultraviolete</li>
+          <li data-langkey="uv_lamp">Lampa UV- purifica microbiologic apa produsa cu ajutorul razelor ultraviolete</li>
         </ol>
         <!-- <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
       </div>
       <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
+        <h2 data-langkey="contact">Contacteaza-ne</h2>
         <hr>
         <address>
-          <strong>Start Bootstrap</strong>
-          <br>3481 Melrose Place
-          <br>Beverly Hills, CA 90210
-          <br>
+          <strong>Med Plast</strong>
         </address>
         <address>
-          <abbr title="Phone">P:</abbr>
-          (123) 456-7890
+          <img src="./css/icons/phone.png">
+          0723999532
           <br>
-          <abbr title="Email">E:</abbr>
-          <a href="mailto:#">name@example.com</a>
+          <img src="./css/icons/email.png">
+          <a href="mailto:#">med_plast@yahoo.com</a>
         </address>
       </div>
     </div>
     <!-- /.row -->
 
     <div class="row">
+      <div class="col-md-12 mb-8">
+        <h2 data-langkey="products">Produse</h2>
+      </div>
       <div class="col-md-3 mb-5">
         <div class="card h-100">
           <img class="card-img-top" src="http://placehold.it/150x100" alt="">
@@ -96,7 +96,7 @@
               neque sequi doloribus.</p>
           </div>
           <div class="card-footer">
-            <a href="/products/product_1.html" class="btn btn-primary">Find Out More!</a>
+            <a href="/products/product_1.html" class="btn btn-primary" data-langkey="find_out">Afla detalii!</a>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
               neque sequi doloribus totam ut praesentium aut.</p>
           </div>
           <div class="card-footer">
-            <a href="/products/product_2.html" class="btn btn-primary">Find Out More!</a>
+            <a href="/products/product_2.html" class="btn btn-primary" data-langkey="find_out">Afla detalii!</a>
           </div>
         </div>
       </div>
@@ -122,7 +122,7 @@
               neque.</p>
           </div>
           <div class="card-footer">
-            <a href="/products/product_3.html" class="btn btn-primary">Find Out More!</a>
+            <a href="/products/product_3.html" class="btn btn-primary" data-langkey="find_out">Afla detalii!</a>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
               neque.</p>
           </div>
           <div class="card-footer">
-            <a href="/products/product_4.html" class="btn btn-primary">Find Out More!</a>
+            <a href="/products/product_4.html" class="btn btn-primary" data-langkey="find_out">Afla detalii!</a>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
 
     <div class="row text-center">
       <div class="col-md-12 mb-5">
-        <h1 class="text-center">Parteneri</h1>
+        <h1 class="text-center" data-langkey="partners">Parteneri</h1>
         <hr>
       </div>
       <div class="col-md-3 mb-4">

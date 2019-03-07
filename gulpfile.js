@@ -1,7 +1,8 @@
 // Load plugins
 const browsersync = require("browser-sync").create();
 const gulp = require("gulp");
-//const server = require("gulp-webserver");
+const uglify = require("gulp-uglify");
+
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function(cb) {
@@ -52,11 +53,10 @@ gulp.task("default", gulp.parallel('vendor'));
 // dev task
 gulp.task("dev", gulp.parallel(watchFiles, browserSync));
 
-// gulp.task('server', function() {
-//   gulp.src('startbootstrap-business-frontpage-gh-pages')	// <-- your app folder
-//     .pipe(server({
-//       livereload: true,
-//       open: true,
-//       port: 6000	// set a port to avoid conflicts with other local apps
-//     }));
-// });
+gulp.task('minify', function () {
+  gulp.src('js/internationalisation.js')
+     .pipe(uglify())
+     .pipe(gulp.dest('build'))
+});
+
+// gulp.task('build', ['css', 'js', 'imgs']);
