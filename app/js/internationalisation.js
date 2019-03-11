@@ -12,6 +12,7 @@ languages.forEach(function(value, index){
 xhttp.onreadystatechange = function(){
     if (this.readyState === 4 && this.status === 200) {
         langDocument = JSON.parse(this.responseText);
+        //sessionStorage.setItem('language', 'ro');
         processLangDocument();
     }
 };
@@ -23,8 +24,11 @@ function switchLanguage(language){
 function processLangDocument(){
     var tags = document.querySelectorAll('span, img, a, label, li, option, h1, h2, h3, h4, h5, h6, table, tr, td, p, small');
     Array.from(tags).forEach(function(value, index){
-        var key = value.dataset.langkey;
-        if(langDocument[key]) value.innerText = langDocument[key];
+        var key = value.dataset.langkey
+        if(langDocument[key]) {
+            // value.innerText = sessionStorage.getItem(langDocument[key]);
+            value.innerText = langDocument[key];
+        }
     });
 }
 

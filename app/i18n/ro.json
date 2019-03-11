@@ -40,5 +40,7 @@
     "annual": "Bi-anual",
     "warranty": "Garantie",
     "warranty_time": "2 ani garantie totala, exclusiv filtrele si cartusele de rasini",
-    "find_out": "Afla detalii!"
+    "find_out": "Afla detalii!",
+    "short_description": "Scurta descriere...",
+    "language": "ro"
 }

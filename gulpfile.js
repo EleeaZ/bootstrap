@@ -1,7 +1,7 @@
 // Load plugins
 const browsersync = require("browser-sync").create();
 const gulp = require("gulp");
-const uglify = require("gulp-uglify");
+//const uglify = require("gulp-uglify");
 
 
 // Copy third party libraries from /node_modules into /vendor
@@ -30,7 +30,7 @@ gulp.task('vendor', function(cb) {
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./"
+      baseDir: "app"
     }
   });
   done();
@@ -44,8 +44,8 @@ function browserSyncReload(done) {
 
 // Watch files
 function watchFiles() {
-  gulp.watch("./css/*", browserSyncReload);
-  gulp.watch("./**/*.html", browserSyncReload);
+  gulp.watch("app/css/*", browserSyncReload);
+  gulp.watch("app/**/*.html", browserSyncReload);
 }
 
 gulp.task("default", gulp.parallel('vendor'));
@@ -53,10 +53,10 @@ gulp.task("default", gulp.parallel('vendor'));
 // dev task
 gulp.task("dev", gulp.parallel(watchFiles, browserSync));
 
-gulp.task('minify', function () {
-  gulp.src('js/internationalisation.js')
-     .pipe(uglify())
-     .pipe(gulp.dest('build'))
-});
+// gulp.task('minify', function () {
+//   gulp.src('app/js/internationalisation.js')
+//      .pipe(uglify())
+//      .pipe(gulp.dest('build'))
+// });
 
 // gulp.task('build', ['css', 'js', 'imgs']);

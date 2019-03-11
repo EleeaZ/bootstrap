@@ -39,6 +39,8 @@
     "maintenance": "Recommended maintenance programme",
     "annual": "Bi-annual",
     "warranty": "Warranty",
-    "warranty_time": "2 years o total waaranty, with the exception of filters and resin cartidges",
-    "find_out": "Find Out More!"
+    "warranty_time": "2 years o total warranty, with the exception of filters and resin cartidges",
+    "find_out": "Find Out More!",
+    "short_description": "Short description...",
+    "language": "en"
 }
